@@ -1,0 +1,32 @@
+[debug] [2021-07-11T12:08:09.880Z] ----------------------------------------------------------------------
+[debug] [2021-07-11T12:08:09.882Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bashn\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-07-11T12:08:09.883Z] CLI Version:   8.11.2
+[debug] [2021-07-11T12:08:09.883Z] Platform:      win32
+[debug] [2021-07-11T12:08:09.883Z] Node Version:  v12.16.1
+[debug] [2021-07-11T12:08:09.884Z] Time:          Sun Jul 11 2021 13:08:09 GMT+0100 (West Africa Standard Time)
+[debug] [2021-07-11T12:08:09.884Z] ----------------------------------------------------------------------
+[debug] [2021-07-11T12:08:09.884Z] 
+[debug] [2021-07-11T12:08:09.892Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-11T12:08:09.892Z] > authorizing via signed-in user
+[debug] [2021-07-11T12:08:09.892Z] [iam] checking project discord-clone-dda4f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-07-11T12:08:09.895Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-11T12:08:09.896Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-11T12:08:10.690Z] <<< HTTP RESPONSE 200 {"date":"Sun, 11 Jul 2021 12:08:09 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-11T12:08:11.004Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/discord-clone-dda4f:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-07-11T12:08:12.405Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 11 Jul 2021 12:08:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1086","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-11T12:08:12.406Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/discord-clone-dda4f  
+ 
+[debug] [2021-07-11T12:08:13.145Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 11 Jul 2021 12:08:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-11T12:08:13.146Z] [WARNING] Unable to fetch default resources. Falling back to project id (discord-clone-dda4f)
+[info] 
+[info] === Deploying to 'discord-clone-dda4f'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-07-11T12:08:13.150Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/discord-clone-dda4f/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-07-11T12:08:34.942Z] Error: connect ETIMEDOUT 216.58.223.234:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.223.234:443
